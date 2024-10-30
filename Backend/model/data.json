@@ -2,121 +2,60 @@
   "programs": [
     {
       "id": "1730274510243",
-      "programName": "Default",
-      "exercises": [
-        {
-          "name": "Exercise1",
-          "id": 1730274507512,
-          "sets": 0,
-          "reps": 0,
-          "holdTime": 0,
-          "side": "left",
-          "days": [],
-          "interval": 0,
-          "frequency": 0,
-          "notes": ""
-        }
-      ]
+      "programName": "New Program",
+      "exercises": []
     },
     {
-      "id": "1730278215293",
-      "programName": "Dknfdg",
+      "id": "1730279500033",
+      "programName": "Rehabilitation Strength Program",
       "exercises": [
         {
-          "name": "gkmfk",
-          "id": 1730278212579,
-          "sets": 2,
-          "reps": 0,
-          "holdTime": 0,
-          "side": "left",
-          "days": [],
-          "interval": 2,
-          "frequency": 0,
-          "notes": ""
-        },
-        {
-          "name": "gkmfk",
-          "id": 1730278235407,
-          "sets": 2,
-          "reps": 0,
+          "name": "Shoulder Flexion with Band",
+          "id": 1730279501111,
+          "sets": 3,
+          "reps": 10,
           "holdTime": 0,
           "side": "right",
-          "days": [],
-          "interval": 2,
-          "frequency": 0,
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "id": "1730278501747",
-      "programName": "cghffh",
-      "exercises": [
-        {
-          "name": "jhhjhjhj",
-          "id": 1730278498537,
-          "sets": 1,
-          "reps": 0,
-          "holdTime": 3,
-          "side": "left",
-          "days": [],
-          "interval": 0,
-          "frequency": 0,
-          "notes": ""
+          "days": ["Monday", "Wednesday"],
+          "interval": 1,
+          "frequency": 2,
+          "notes": "Use a resistance band to improve shoulder mobility."
         },
         {
-          "name": "jhhjhjhj",
-          "id": 1730278513486,
-          "sets": 1,
-          "reps": 0,
-          "holdTime": 3,
-          "side": "left",
-          "days": [],
-          "interval": 4,
-          "frequency": 0,
-          "notes": ""
-        },
-        {
-          "name": "jhhjhjhj",
-          "id": 1730278785040,
-          "sets": 1,
-          "reps": 0,
-          "holdTime": 3,
-          "side": "left",
-          "days": [],
-          "interval": 4,
-          "frequency": 0,
-          "notes": ""
-        }
-      ]
-    },
-    {
-      "id": "1730278837210",
-      "programName": "Test15",
-      "exercises": [
-        {
-          "name": "Exercise1",
-          "id": 1730278831773,
-          "sets": 2,
-          "reps": 0,
+          "name": "Seated Leg Extensions",
+          "id": 1730279502222,
+          "sets": 4,
+          "reps": 15,
           "holdTime": 0,
-          "side": "left",
-          "days": [],
+          "side": "both",
+          "days": ["Tuesday", "Thursday"],
           "interval": 0,
-          "frequency": 0,
-          "notes": ""
+          "frequency": 2,
+          "notes": "Strengthening exercise for knee stability."
         },
         {
-          "name": "Exercise2",
-          "id": 1730278853037,
-          "sets": 0,
-          "reps": 0,
+          "name": "Standing Calf Raises",
+          "id": 1730279503333,
+          "sets": 3,
+          "reps": 12,
           "holdTime": 0,
-          "side": "left",
-          "days": [],
+          "side": "both",
+          "days": ["Friday"],
           "interval": 0,
-          "frequency": 0,
-          "notes": ""
+          "frequency": 1,
+          "notes": "Enhances calf strength and balance."
+        },
+        {
+          "name": "Wall Sits",
+          "id": 1730279504444,
+          "sets": 3,
+          "reps": 1,
+          "holdTime": 30,
+          "side": "both",
+          "days": ["Saturday"],
+          "interval": 0,
+          "frequency": 1,
+          "notes": "Great for quadriceps strength and endurance."
         }
       ]
     }

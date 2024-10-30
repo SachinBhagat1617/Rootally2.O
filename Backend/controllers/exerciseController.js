@@ -78,21 +78,24 @@ exports.saveProgram = (req, res) => {
 
 // Controller to delete a program
 exports.deleteProgram = (req, res) => {
-  const { id } = req.params;
-  try {
-    const data = readData();
-    const updatedPrograms = data.programs.filter(
-      (program) => program.id !== id
-    );
+    const { id } = req.params;
+    if (id === "1730274510243") return;
+      try {
+        const data = readData();
+        const updatedPrograms = data.programs.filter(
+          (program) => program.id !== id
+        );
 
-    if (updatedPrograms.length === data.programs.length) {
-      return res.status(404).json({ message: "Program not found" });
-    }
+        if (updatedPrograms.length === data.programs.length) {
+          return res.status(404).json({ message: "Program not found" });
+        }
 
-    data.programs = updatedPrograms;
-    writeData(data);
-    return res.status(200).json({ message: "Program removed successfully" });
-  } catch (error) {
-    res.status(500).json({ message: "Error deleting program" });
-  }
+        data.programs = updatedPrograms;
+        writeData(data);
+        return res
+          .status(200)
+          .json({ message: "Program removed successfully" });
+      } catch (error) {
+        res.status(500).json({ message: "Error deleting program" });
+      }
 };

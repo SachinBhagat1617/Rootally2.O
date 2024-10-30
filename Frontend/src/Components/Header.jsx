@@ -67,6 +67,8 @@ const Header = () => {
     if (selectedProgram.id === programId) {
       dispatch(setExercises([]));
     }
+    
+    window.location.reload();
   };
 
   return (

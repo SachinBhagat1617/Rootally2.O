@@ -124,14 +124,13 @@ const Body = () => {
           Add
         </button>
       </div>
-
       <h1 className="text-xl font-bold">Exercise Program</h1>
       <DndContext
         sensors={sensors}
         onDragEnd={handleDragEnd}
         collisionDetection={closestCorners}
       >
-        <div className="max-h-128 overflow-y-auto border border-gray-300 rounded p-2">
+        <div className=" max-h-96 overflow-y-auto border border-gray-300 rounded p-2">
           <SortableContext
             items={exercises.map((ex) => ex.id)}
             strategy={verticalListSortingStrategy}

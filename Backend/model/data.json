@@ -16,7 +16,10 @@
           "reps": 10,
           "holdTime": 0,
           "side": "right",
-          "days": ["Monday", "Wednesday"],
+          "days": [
+            "Monday",
+            "Wednesday"
+          ],
           "interval": 1,
           "frequency": 2,
           "notes": "Use a resistance band to improve shoulder mobility."
@@ -28,7 +31,10 @@
           "reps": 15,
           "holdTime": 0,
           "side": "both",
-          "days": ["Tuesday", "Thursday"],
+          "days": [
+            "Tuesday",
+            "Thursday"
+          ],
           "interval": 0,
           "frequency": 2,
           "notes": "Strengthening exercise for knee stability."
@@ -40,7 +46,9 @@
           "reps": 12,
           "holdTime": 0,
           "side": "both",
-          "days": ["Friday"],
+          "days": [
+            "Friday"
+          ],
           "interval": 0,
           "frequency": 1,
           "notes": "Enhances calf strength and balance."
@@ -52,7 +60,9 @@
           "reps": 1,
           "holdTime": 30,
           "side": "both",
-          "days": ["Saturday"],
+          "days": [
+            "Saturday"
+          ],
           "interval": 0,
           "frequency": 1
         }
@@ -93,47 +103,55 @@
           "interval": 0,
           "frequency": 0,
           "notes": ""
-        }
-      ],
-      "notes": "Practise Well"
-    },
-    {
-      "id": "1730282665334",
-      "programName": "headache2.0",
-      "exercises": [
+        },
         {
-          "name": "Exercise1",
-          "id": 1730282271180,
+          "name": "Exercise2",
+          "id": 1730286519007,
           "sets": 2,
-          "reps": 2,
+          "reps": 0,
           "holdTime": 0,
-          "side": "left",
-          "days": [],
+          "side": "right",
+          "days": [
+            "Wed",
+            "Thu"
+          ],
           "interval": 0,
-          "frequency": 0,
-          "notes": ""
+          "frequency": 0
         }
       ],
       "notes": "Practise Well"
     },
     {
-      "id": "1730283326226",
-      "programName": "LegPain2.0",
+      "id": "1730286488108",
+      "programName": "BodyPain",
       "exercises": [
         {
-          "name": "Exercise1",
-          "id": 1730282271180,
-          "sets": 2,
+          "name": "Stretching",
+          "id": 1730286432498,
+          "sets": 3,
+          "reps": 0,
+          "holdTime": 0,
+          "side": "right",
+          "days": [
+            "Wed",
+            "Thu"
+          ],
+          "interval": 0,
+          "frequency": 0
+        },
+        {
+          "name": "Jogging",
+          "id": 1730286464292,
+          "sets": 0,
           "reps": 0,
           "holdTime": 0,
           "side": "left",
           "days": [],
           "interval": 0,
-          "frequency": 0,
-          "notes": ""
+          "frequency": 0
         }
       ],
-      "notes": "Do it pls"
+      "notes": "Do it well"
     }
   ]
 }

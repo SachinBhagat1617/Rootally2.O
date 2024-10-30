@@ -32,18 +32,6 @@ const Header = () => {
     dispatch(setNotes(selectedProgram.notes));
     //console.log(selectedProgram);
   };
-  // const savePrograms = async (data) => {
-  //   try {
-  //     const response = await axios.post(
-  //       "http://localhost:5000/api/programs/add",
-  //       data
-  //     );
-  //     // dispatch(loadPrograms(json_data));
-  //     console.log(response);
-  //   } catch (error) {
-  //     console.error("Error fetching programs:", error);
-  //   }
-  // };
   const deleteProgramFromDB = async (id) => {
     try {
       const response = await axios.delete(

@@ -32,7 +32,7 @@ const Body = () => {
   const exercises = useSelector((state) => state.exercises.exercises);
   const programName = useSelector((state) => state.programs.programName);
   const programs = useSelector((state) => state.programs.programs);
-
+  const notes = useSelector((state) => state.exercises.notes);
   // Add Exercise
   const addExerciseHandler = () => {
     const data = {
@@ -45,7 +45,6 @@ const Body = () => {
       days: [],
       interval: 0,
       frequency: 0,
-      notes: "",
     };
     dispatch(addExercise(data));
     setExerciseName("");
@@ -81,6 +80,7 @@ const Body = () => {
       id,
       programName,
       exercises,
+      notes: notesData,
     };
     saveProgram(data);
     dispatch(setExercises([])); // Clear exercises after saving
@@ -197,8 +197,9 @@ const Body = () => {
       <div className="flex flex-wrap overflow-x-hidden">
         <div className="w-full mt-4">
           <label className="block text-sm font-semibold">Therapist Notes</label>
+          {/*{console.log(programs)}*/}
           <textarea
-            value={notesData || ""}
+            value={notesData || notes}
             onChange={(e) => setNotesData(e.target.value)}
             placeholder="Add notes here"
             className="w-full border rounded p-2 mt-1"

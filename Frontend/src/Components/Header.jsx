@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addProgram, removeProgram, setPrograms } from "../utils/ProgramSlice"; // Import the action
-import { setExercises } from "../utils/ExerciseSlice";
+import { addProgram, removeProgram, setPrograms } from "../utils/ProgramSlice"; 
+import { setExercises, setNotes } from "../utils/ExerciseSlice";
 import axios from "axios";
 const Header = () => {
   const dispatch = useDispatch();
@@ -29,6 +29,7 @@ const Header = () => {
     setName(selectedProgram.programName);
     setProgramId(selectedProgram.id);
     dispatch(setExercises(selectedProgram.exercises));
+    dispatch(setNotes(selectedProgram.notes));
     //console.log(selectedProgram);
   };
   // const savePrograms = async (data) => {

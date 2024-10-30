@@ -5,7 +5,8 @@ const ProgramSlice = createSlice({
   initialState: {
     id:"",
     programs: [],
-    programName:"",
+    programName: "",
+    notes:""
   },
   reducers: {
     addProgram: (state, action) => {

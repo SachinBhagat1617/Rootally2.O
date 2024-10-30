@@ -4,6 +4,7 @@ const ExerciseSlice = createSlice({
   name: "exercises",
   initialState: {
     exercises: [],
+    notes:""
   },
   reducers: {
     addExercise: (state, action) => {
@@ -36,6 +37,9 @@ const ExerciseSlice = createSlice({
     setExercises: (state, action) => { // when you select an option it set the exercise
       state.exercises = action.payload;
     },
+    setNotes: (state, action) => {
+      state.notes = action.payload;
+    }
   },
 });
 
@@ -45,5 +49,6 @@ export const {
   duplicateExercise,
   updateExercise,
   setExercises,
+  setNotes,
 } = ExerciseSlice.actions;
 export default ExerciseSlice.reducer;

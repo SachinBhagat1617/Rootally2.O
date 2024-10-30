@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addProgram, removeProgram, setPrograms } from "../utils/ProgramSlice"; 
+import { addProgram, removeProgram, setDays, setPrograms } from "../utils/ProgramSlice"; 
 import { setExercises, setNotes } from "../utils/ExerciseSlice";
 import axios from "axios";
 const Header = () => {
@@ -26,10 +26,13 @@ const Header = () => {
     const selectedProgram = programs.find(
       (program) => program.programName === progName
     );
+
     setName(selectedProgram.programName);
     setProgramId(selectedProgram.id);
     dispatch(setExercises(selectedProgram.exercises));
     dispatch(setNotes(selectedProgram.notes));
+    console.log(selectedProgram.days);
+    dispatch(setDays({ programId: selectedProgram.id, days: selectedProgram.days }));
     //console.log(selectedProgram);
   };
   const deleteProgramFromDB = async (id) => {
@@ -61,12 +64,12 @@ const Header = () => {
   };
 
   return (
-    <div className="p-4 bg-white rounded-lg shadow-md md:max-w-2xl mx-auto">
+    <div className="p-4 bg-white rounded-lg shadow-md  mx-auto">
       <div className="flex md:flex-row gap-4 md:gap-8">
         {/* Program Name Input */}
         <div className="flex-1">
           <label className="block text-gray-700 font-semibold mb-1">
-            Program Name
+            Programme Name
           </label>
           <div className="flex">
             <input

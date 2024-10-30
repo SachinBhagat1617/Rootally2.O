@@ -52,8 +52,9 @@ exports.saveProgram = (req, res) => {
         programName: req.body.programName,
         exercises: req.body.exercises,
         notes: req.body.notes,
+        days:req.body.days,
       };
-
+      console.log(newProgram);
       data.programs.push(newProgram);
       writeData(data);
 

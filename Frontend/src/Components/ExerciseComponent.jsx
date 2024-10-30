@@ -29,7 +29,7 @@ const ExerciseComponent = ({
       : [...days, day]; // Add day if not selected
     onDayChange(updatedDays);
   };
-  const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  // const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const { attributes, listeners, setNodeRef, transform, transition } =
     useSortable({ id });
   
@@ -92,8 +92,8 @@ const ExerciseComponent = ({
       <div className="flex flex-wrap overflow-x-hidden">
         <div className="flex  items-center gap-4">
           <div className="flex space-x-1 items-center">
-            <label className="text-sm" htmlFor={`sets-${id}`}>
-              Sets
+            <label className="text" htmlFor={`sets-${id}`}>
+              🏋️Sets
             </label>
             <div className="flex items-center gap-1">
               <button
@@ -120,7 +120,7 @@ const ExerciseComponent = ({
           </div>
 
           <div className="flex space-x-1 items-center">
-            <label className="text-sm" htmlFor={`reps-${id}`}>
+            <label className="text" htmlFor={`reps-${id}`}>
               Reps
             </label>
             <div className="flex items-center gap-1">
@@ -148,7 +148,7 @@ const ExerciseComponent = ({
           </div>
 
           <div className="flex space-x-1 items-center">
-            <label className="text-sm" htmlFor={`holdTime-${id}`}>
+            <label className="text" htmlFor={`holdTime-${id}`}>
               Hold Time (s)
             </label>
             <div className="flex items-center gap-1">
@@ -174,7 +174,7 @@ const ExerciseComponent = ({
               </button>
             </div>
             <div className="flex items-center gap-1">
-              <label className="text-sm" htmlFor={`frequency-${id}`}>
+              <label className="text" htmlFor={`frequency-${id}`}>
                 frequency
               </label>
               <button
@@ -224,19 +224,6 @@ const ExerciseComponent = ({
               </button>
             </div>
           </div>
-        </div>
-        <div className="flex py-2 space-x-2 mb-4">
-          {daysOfWeek.map((day) => (
-            <label key={day} className="flex items-center">
-              <input
-                type="checkbox"
-                checked={days.includes(day)}
-                onChange={() => handleDayToggle(day)}
-                className="mr-1"
-              />
-              {day}
-            </label>
-          ))}
         </div>
       </div>
     </div>

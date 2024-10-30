@@ -6,152 +6,98 @@
       "exercises": []
     },
     {
-      "id": "1730279500033",
-      "programName": "Rehabilitation Strength Program",
+      "id": "1730309574488",
+      "programName": "Program45",
       "exercises": [
         {
-          "name": "Shoulder Flexion with Band",
-          "id": 1730279501111,
+          "name": "Exercise1",
+          "id": 1730301998327,
+          "sets": 5,
+          "reps": 1,
+          "holdTime": 1,
+          "side": "right",
+          "interval": 1,
+          "frequency": 2
+        },
+        {
+          "name": "Exercise1",
+          "id": 1730301937503,
+          "sets": 4,
+          "reps": 1,
+          "holdTime": 1,
+          "side": "right",
+          "interval": 1,
+          "frequency": 2
+        }
+      ],
+      "notes": "",
+      "days": ["Wed", "Fri", "Mon"]
+    },
+    {
+      "id": "1730312226953",
+      "programName": "Program210",
+      "exercises": [
+        {
+          "name": "Exercise1",
+          "id": 1730312210958,
+          "sets": 2,
+          "reps": 4,
+          "holdTime": 0,
+          "side": "left",
+          "interval": 0,
+          "frequency": 0
+        }
+      ],
+      "notes": "Do it well",
+      "days": ["Tue", "Wed"]
+    },
+    {
+      "id": "1730312226953",
+      "programName": "Strength and Conditioning Program",
+      "exercises": [
+        {
+          "name": "Deadlift",
+          "id": 1730312210958,
+          "sets": 3,
+          "reps": 8,
+          "holdTime": 0,
+          "side": "none",
+          "interval": 0,
+          "frequency": 2
+        },
+        {
+          "name": "Bench Press",
+          "id": 1730312210959,
           "sets": 3,
           "reps": 10,
           "holdTime": 0,
-          "side": "right",
-          "days": [
-            "Monday",
-            "Wednesday"
-          ],
-          "interval": 1,
-          "frequency": 2,
-          "notes": "Use a resistance band to improve shoulder mobility."
-        },
-        {
-          "name": "Seated Leg Extensions",
-          "id": 1730279502222,
-          "sets": 4,
-          "reps": 15,
-          "holdTime": 0,
-          "side": "both",
-          "days": [
-            "Tuesday",
-            "Thursday"
-          ],
+          "side": "none",
           "interval": 0,
-          "frequency": 2,
-          "notes": "Strengthening exercise for knee stability."
+          "frequency": 2
         },
         {
-          "name": "Standing Calf Raises",
-          "id": 1730279503333,
+          "name": "Pull-Up",
+          "id": 1730312210960,
           "sets": 3,
-          "reps": 12,
+          "reps": 6,
           "holdTime": 0,
-          "side": "both",
-          "days": [
-            "Friday"
-          ],
+          "side": "none",
           "interval": 0,
-          "frequency": 1,
-          "notes": "Enhances calf strength and balance."
+          "frequency": 2
         },
         {
-          "name": "Wall Sits",
-          "id": 1730279504444,
+          "name": "Plank",
+          "id": 1730312210961,
           "sets": 3,
-          "reps": 1,
+          "reps": 30,
           "holdTime": 30,
-          "side": "both",
-          "days": [
-            "Saturday"
-          ],
+          "side": "none",
           "interval": 0,
-          "frequency": 1
+          "frequency": 2
         }
       ],
-      "notes": "Great for quadriceps strength and endurance."
-    },
-    {
-      "id": "1730282282093",
-      "programName": "LegPain",
-      "exercises": [
-        {
-          "name": "Exercise1",
-          "id": 1730282271180,
-          "sets": 2,
-          "reps": 0,
-          "holdTime": 0,
-          "side": "left",
-          "days": [],
-          "interval": 0,
-          "frequency": 0,
-          "notes": ""
-        }
-      ],
-      "notes": "Practise Well"
-    },
-    {
-      "id": "1730282319844",
-      "programName": "headache",
-      "exercises": [
-        {
-          "name": "Exercise1",
-          "id": 1730282271180,
-          "sets": 2,
-          "reps": 2,
-          "holdTime": 0,
-          "side": "left",
-          "days": [],
-          "interval": 0,
-          "frequency": 0,
-          "notes": ""
-        },
-        {
-          "name": "Exercise2",
-          "id": 1730286519007,
-          "sets": 2,
-          "reps": 0,
-          "holdTime": 0,
-          "side": "right",
-          "days": [
-            "Wed",
-            "Thu"
-          ],
-          "interval": 0,
-          "frequency": 0
-        }
-      ],
-      "notes": "Practise Well"
-    },
-    {
-      "id": "1730286488108",
-      "programName": "BodyPain",
-      "exercises": [
-        {
-          "name": "Stretching",
-          "id": 1730286432498,
-          "sets": 3,
-          "reps": 0,
-          "holdTime": 0,
-          "side": "right",
-          "days": [
-            "Wed",
-            "Thu"
-          ],
-          "interval": 0,
-          "frequency": 0
-        },
-        {
-          "name": "Jogging",
-          "id": 1730286464292,
-          "sets": 0,
-          "reps": 0,
-          "holdTime": 0,
-          "side": "left",
-          "days": [],
-          "interval": 0,
-          "frequency": 0
-        }
-      ],
-      "notes": "Do it well"
+      "notes": "Focus on form and control the weight.",
+      "days": ["Tue", "Wed", "Thu"]
     }
   ]
 }
